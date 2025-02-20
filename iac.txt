@@ -1,1 +1,3 @@
-
+ az storage account create -n myacctname0220 -g myrg0220
+ 
+ az group export -g myrg0220 > simpletemplate0220.json
