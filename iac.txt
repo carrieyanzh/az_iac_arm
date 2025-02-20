@@ -1,3 +1,13 @@
- az storage account create -n myacctname0220 -g myrg0220
+az storage account create -n myacctname0220 -g myrg0220
  
- az group export -g myrg0220 > simpletemplate0220.json
+az group export -g myrg0220 > simpletemplate0220.json
+
+az group deployment create --template-file simpletemplate0220.json --parameters storageAccounts_0220_name=mystorageacct0220 -g myrg0220
+
+az storage account list -g myrg0220 --query "[].name"
+
+az group deployment create --template-file simpletemplate0220.json --parameters storageAccounts_0220_name=mystorageacct0220 -g myrg0220 --mode complete
+
+az storage account list -g myrg0220 --query "[].name"
+
+git clone https://github.com/cadullms/simplegreet 
