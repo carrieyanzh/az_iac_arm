@@ -18,3 +18,5 @@ $ParametersObj = @{
 storageAccountName= "my0221"
 storageAccountType = "mytype0221"
 }
+
+New-AzResourceGroupDeployment -name "episode03_01" -resourcegroupname "my_rg0218" -templatefile .\template.json -TemplateParameterfile .\template.param.json
