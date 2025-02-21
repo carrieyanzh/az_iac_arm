@@ -29,3 +29,6 @@ Resource : list keys , ResourceGroup
 Comparision: equals , greater, less
 Logical : and , or , not , if
 Array : concat, length , range, take, union
+
+New-AzResourceGroupDeployment -name "episode03_01" -resourcegroupname "my_rg0218" -templatefile .\functiontemplate.json 
+
