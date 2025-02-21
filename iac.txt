@@ -20,3 +20,12 @@ storageAccountType = "mytype0221"
 }
 
 New-AzResourceGroupDeployment -name "episode03_01" -resourcegroupname "my_rg0218" -templatefile .\template.json -TemplateParameterfile .\template.param.json
+
+Functions:
+Numberic - add, div, min, max, copyIndex
+string : conct, contains, split, replace, trim
+Date: uctNow, dateTimeAdd
+Resource : list keys , ResourceGroup
+Comparision: equals , greater, less
+Logical : and , or , not , if
+Array : concat, length , range, take, union
