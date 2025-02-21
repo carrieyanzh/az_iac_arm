@@ -11,3 +11,10 @@ az group deployment create --template-file simpletemplate0220.json --parameters 
 az storage account list -g myrg0220 --query "[].name"
 
 git clone https://github.com/cadullms/simplegreet 
+
+New-AzResourceGroupDeployment -name "episode03_01" -resourcegroupname "my_rg0218" -templatefile .\template.json -TemplateParameterObject $ParametersObj
+
+$ParametersObj = @{
+storageAccountName= "my0221"
+storageAccountType = "mytype0221"
+}
