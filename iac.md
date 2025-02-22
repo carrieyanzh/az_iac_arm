@@ -32,3 +32,19 @@ Array : concat, length , range, take, union
 
 New-AzResourceGroupDeployment -name "episode03_01" -resourcegroupname "my_rg0218" -templatefile .\functiontemplate.json 
 
+
+ 1 try { . "c:\Users\carrieyanzh\AppData\Local\Programs\Microsoft VS Code\resources\app\out\vs\workbench\contrib\...
+   2 bicep
+   3 bicep --help
+   4 bicep --version
+   5 az --version
+   6 Get-InstalledModule
+   7 $PSVersionTable.PSVersion
+   8 cls
+   9 clear
+  10 lcs
+  11 cls
+  12 history
+  13 Get-InstalledModule AZ
+  14 Get-InstalledModule Az
+
